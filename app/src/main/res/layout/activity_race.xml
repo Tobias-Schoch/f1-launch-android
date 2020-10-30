@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/race_act"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/text"
+    android:paddingTop="40dip"
+    android:paddingBottom="40dip"
+    android:paddingLeft="60dip"
+    android:paddingRight="60dip">
+
+    <LinearLayout
+        android:id="@+id/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="42dip"
+            android:paddingTop="16dp"
+            android:text="@string/app_name"
+            android:textColor="@color/background"
+            android:textSize="40sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/heading"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/lights"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="42dip"
+            android:adjustViewBounds="true"
+            android:src="@mipmap/phase_one" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/background"
+            android:layout_weight="1"
+            android:textSize="28sp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="0ms" />
+        <TextView
+            android:id="@+id/record"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/background"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:text="Highscore: -" />
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="110dip"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/buttonBackground"
+        android:text="@string/race"
+        android:textColor="@color/text"
+        android:textSize="40sp"
+        app:cornerRadius="55dip"
+        app:iconTint="#FFFFFF"/>
+
+
+</RelativeLayout>
+
+

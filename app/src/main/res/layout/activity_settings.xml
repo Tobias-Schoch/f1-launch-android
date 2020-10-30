@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/settings_act"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/text"
+    android:paddingTop="40dip"
+    android:paddingBottom="40dip"
+    android:paddingLeft="60dip"
+    android:paddingRight="60dip">
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/settings_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="20px"
+            android:layout_marginBottom="62dip"
+            android:text="@string/settings_name"
+            android:textColor="@color/background"
+            android:textSize="40sp" />
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/darkmode"
+        android:layout_width="240dip"
+        android:layout_height="80dip"
+        android:layout_below="@id/top"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="12dip"
+        android:backgroundTint="@color/buttonBackground"
+        android:text="@string/darkmode"
+        android:textColor="@color/text"
+        android:textSize="20sp"
+        app:cornerRadius="40dip"
+        app:icon="@mipmap/moon"
+        app:iconPadding="0dip"
+        app:iconSize="32dip"
+        app:iconTint="#FFFFFF"/>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/reset"
+        android:layout_width="240dip"
+        android:layout_height="80dip"
+        android:layout_below="@id/darkmode"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="12dip"
+        android:backgroundTint="@color/buttonBackground"
+        android:text="@string/reset"
+        android:textColor="@color/text"
+        android:textSize="20sp"
+        app:cornerRadius="40dip"
+        app:icon="@mipmap/delete"
+        app:iconPadding="0dip"
+        app:iconSize="32dip"
+        app:iconTint="#FFFFFF"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/back"
+        android:layout_width="240dip"
+        android:layout_height="80dip"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="@color/buttonBackground"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:text="@string/back"
+        android:textColor="@color/text"
+        android:textSize="20sp"
+        app:cornerRadius="40dip"
+        app:icon="@mipmap/arrow"
+        app:iconPadding="0dip"
+        app:iconSize="32dip"
+        app:iconTint="#FFFFFF"/>
+
+
+</RelativeLayout>
